@@ -1,0 +1,1 @@
+select CAST('1' as int)

@@ -1,0 +1,1 @@
+SHOW config_file

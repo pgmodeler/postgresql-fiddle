@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sysctl kern.sysv.shmmax

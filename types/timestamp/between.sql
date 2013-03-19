@@ -1,0 +1,17 @@
+CREATE TEMP TABLE t
+(
+    datetime TIMESTAMP,
+    value integer
+    
+);
+INSERT INTO t(datetime,value) VALUES 
+(CURRENT_TIMESTAMP-INTERVAL '1 hour',-1),
+(CURRENT_TIMESTAMP,0),
+(CURRENT_TIMESTAMP+INTERVAL '1 hour',1);
+
+SELECT value 
+FROM t 
+ORDER BY 
+abs(EXTRACT(EPOCH FROM CURRENT_TIMESTAMP-datetime))
+LIMIT 1
+

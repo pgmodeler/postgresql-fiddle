@@ -1,0 +1,4 @@
+-- http://www.sql.ru/forum/actualthread.aspx?tid=491354
+
+--pg_toast - раздел "TOAST"
+--pg_temp - раздел "Client Connection Defaults"

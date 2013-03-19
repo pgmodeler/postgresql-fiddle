@@ -1,0 +1,15 @@
+http://stackoverflow.com/questions/3995326/shebang-for-psql
+
+
+#! /bin/sh
+exec sh -c "tail -n +3 $0 | psql -f -"
+
+select now();
+or simply
+
+#! /bin/sh
+psql << E_O_SQL
+
+select now();
+
+E_O_SQL

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+launchctl load /Users/nordmenss/Library/LaunchAgents/homebrew.mxcl.postgresql.plist

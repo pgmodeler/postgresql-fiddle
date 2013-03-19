@@ -1,0 +1,2 @@
+SELECT 60 * INTERVAL '1 second'; 
+SELECT 60 * INTERVAL '1 minute'; 
